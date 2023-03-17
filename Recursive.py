@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[12]:
-
-
-
-
-
-# In[ ]:
-
-
 import matplotlib.pyplot as plt
 
 def recursive_func(x, n):
@@ -20,18 +8,11 @@ def recursive_func(x, n):
         x_n = x_prev * (1 - x_prev)
         return recursive_func(x, n-1) + [x_n]
 
-# Generate the sequence for x = 0.1
 x_values = recursive_func(0.1, 24)
 
-# Plot the sequence
 plt.plot(list(range(25)), x_values)
 plt.xlabel('n')
 plt.ylabel('x(n)')
 plt.show()
 
-
-# In[ ]:
-
-
-
-
+# Fiecare funcție se va trasa în parte
